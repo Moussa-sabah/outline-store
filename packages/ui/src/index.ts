@@ -1,4 +1,4 @@
-export { default as Button } from "./TempButton";
+export { default as Button } from "./Button";
 export {default as Message} from './Message'
 export { default as GenderFilter } from "./genderFilter/GenderFilter";
 export { default as BrandFilter } from "./brandFilter/BrandFilter";
