@@ -58,7 +58,7 @@ export default function ForgotPassword() {
 
 
                     <div className="flex flex-col flex-1 gap-2 text-sm md:text-[16px]">
-                        <label className=''>البربد الألكتروني</label>
+                        <label className=''>البربد الإلكتروني</label>
                         <input onChange={(e) => setEmail(e.target.value)} type="email" className="  outline-none px-3 h-11 border border-borders rounded-md" />
                     </div>
 

@@ -16,7 +16,7 @@ interface props {
   fontWeight?: boolean
 }
 
-export default function Button({ title, type, bg, textColor, textSize, border, py, px, width, fullWidth, height, borderColor, fontWeight, click }: props) {
+export default function Buttonn({ title, type, bg, textColor, textSize, border, py, px, width, fullWidth, height, borderColor, fontWeight, click }: props) {
 
   return (
     <button

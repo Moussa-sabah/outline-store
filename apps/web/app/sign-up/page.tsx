@@ -76,7 +76,7 @@ export default function Signup() {
                         <input onChange={(e) => setName(e.target.value)} required type="text" className=" outline-none border border-borders px-3 h-11 rounded-md  " />
                     </div>
                     <div className="flex flex-col flex-1 gap-1">
-                        <label>البريد الألكتروني</label>
+                        <label>البريد الإلكتروني</label>
                         <input onChange={(e) => setEmail(e.target.value)} required type="email" className=" outline-none border border-borders px-3 h-11 rounded-md" />
                     </div>
 

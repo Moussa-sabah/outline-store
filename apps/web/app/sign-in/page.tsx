@@ -71,7 +71,7 @@ export default function SignIn() {
                         <p className=" absolute -translate-y-1/2 bg-white w-8 text-center">أو</p>
                     </div>
                     <div className="flex flex-col flex-1 gap-2 ">
-                        <label>البريد الألكتروني</label>
+                        <label>البريد الإلكتروني</label>
                         <input required onChange={(e) => setEmail(e.target.value)} type="email" className=" outline-none px-3 h-11 border border-borders rounded-md" />
                     </div>
                     <div className="flex flex-col flex-1 gap-2 ">
