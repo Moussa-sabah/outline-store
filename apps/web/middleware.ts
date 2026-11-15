@@ -53,24 +53,13 @@ export async function middleware(request: NextRequest) {
 
   const pathname = request.nextUrl.pathname;
 
-  if (
-    customer &&
-    (pathname === "/sign-up" || pathname === "/sign-in")
-  ) {
+  if (customer && (pathname === "/sign-up" || pathname === "/sign-in")) {
     return NextResponse.redirect(new URL("/", request.url));
   }
-
-  // if (
-  //   !customer &&
-
-  //     pathname === "/profile"
-  // ) {
-  //   return NextResponse.redirect(new URL("/sign-in", request.url));
-  // }
 
   return response;
 }
 
 export const config = {
-  matcher: [ "/sign-in", "/sign-up"],
+  matcher: ["/sign-in", "/sign-up"],
 };
