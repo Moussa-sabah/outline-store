@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "shadcn/tailwind.css";
+@config "../tailwind.config.js";
+
+.tabelContainer .row:nth-child(even) {
+    background-color: #F3F2F2;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input{
+    outline: none;
+}
