@@ -28,7 +28,7 @@ export default function SortFilter({ type, toggleModal, hideModal, showSortModal
 
     return (
         <div className="relative">
-            <button type="button" onClick={() => toggleModal(false, false, true)} className={`rounded-md border capitalize w-fit border-borders px-3 flex items-center justify-between  gap-2 py-1 ${sort ? 'font-bold' : ''}`}>
+            <button type="button" onClick={() => toggleModal(false, false, true)} className={`rounded-md border capitalize w-fit cursor-pointer border-borders px-3 flex items-center justify-between  gap-2 py-1 ${sort ? 'font-bold' : ''}`}>
                 {sort === 'price: high-low' ? 'السعر الأعلى' : sort === 'price: low-high' ? 'السعر الأقل' : sort === 'newest' ? 'الأحدث' : sort === 'oldest' ? 'الأساسية' : 'ترتيب حسب'}
                 <FontAwesomeIcon style={{ fontSize: '10px' }} icon={faChevronDown} className={`${showSortModal ? 'rotate-180' : ''} transition-all`} />
             </button>

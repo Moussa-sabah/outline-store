@@ -41,7 +41,7 @@ export default function GenderFilter({ type, toggleModal, hideModal, showGenderM
 
     return (
         <div className=" relative">
-            <button type='button' onClick={() => toggleModal(true, false, false)} className={`rounded-md border capitalize border-borders px-3 flex items-center justify-between  gap-2 py-1  ${gender ? 'font-bold' : ''}`}>
+            <button type='button' onClick={() => toggleModal(true, false, false)} className={`rounded-md border capitalize cursor-pointer border-borders px-3 flex items-center justify-between  gap-2 py-1  ${gender ? 'font-bold' : ''}`}>
                 {gender === 'men' ? 'رجالي' : gender === 'women' ? 'نسائي' : gender === 'kids' ? 'أطفال' : 'الفئة'}
                 <FontAwesomeIcon style={{ fontSize: '10px' }} icon={faChevronDown} className={` ${showGenderModal ? 'rotate-180' : ''} transition-all`} />
             </button>

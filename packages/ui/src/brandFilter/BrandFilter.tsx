@@ -38,7 +38,7 @@ export default function BrandFilter({ type, toggleModal, hideModal, showBrandMod
 
     return (
         <div className=" relative">
-            <button type='button' onClick={() => toggleModal(false, true, false)} className={`rounded-md border capitalize  border-borders px-3 flex items-center justify-between  gap-2 py-1 ${brand ? ' font-bold' : ''}`}>
+            <button type='button' onClick={() => toggleModal(false, true, false)} className={`rounded-md border capitalize cursor-pointer border-borders px-3 flex items-center justify-between  gap-2 py-1 ${brand ? ' font-bold' : ''}`}>
                 {brand ? brand : 'العلامة التجارية'}
                 <FontAwesomeIcon style={{ fontSize: '10px' }} icon={faChevronDown} className={`${showBrandModal ? 'rotate-180' : ''} transition-all`} />
             </button>

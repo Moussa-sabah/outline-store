@@ -33,12 +33,19 @@ export default function Filtering() {
         setShowBrandModal(false)
         setShowSortModal(false)
     }
+
+
+    function handleResetFilters() {
+        resetFilters()
+        hideModal()
+
+    }
     return (
         <main className="flex items-center justify-between text-sm w-full">
             <div className="flex flex-col md:flex-row  gap-5 w-full md:w-fit">
                 <div className="flex items-center justify-between">
                     <h1 className="uppercase text-lg lg:text-xl">تشكيلة الساعات</h1>
-                    <button onClick={resetFilters} className="text-secondary md:hidden cursor-pointer">اعادة تعيين</button>
+                    <button onClick={handleResetFilters} className="text-secondary md:hidden cursor-pointer">اعادة تعيين</button>
                 </div>
 
                 <div className="flex gap-0.5 xs_sm:gap-2 ">
@@ -51,9 +58,8 @@ export default function Filtering() {
             </div>
             <div className="hidden md:flex items-center gap-2">
                 <SortFilter type="web" toggleModal={toggleModal} hideModal={hideModal} showSortModal={showSortModal} />
-                <button onClick={resetFilters} className="text-secondary cursor-pointer">اعادة تعيين</button>
+                <button onClick={handleResetFilters} className="text-secondary cursor-pointer">اعادة تعيين</button>
             </div>
-
         </main>
     )
 
